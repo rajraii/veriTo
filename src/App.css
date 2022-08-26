@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.ant-card-body {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem !important;
+}
+
+.todoTitle > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  max-height: 2rem;
+}
+
+.todoTitle > div > h1 {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+  .todoTitle > div > h1 {
+    font-size: 0.8rem;
+  }
+
+  .ant-card-body {
+    padding: 0 0.3rem  !important;
+    /* padding-left: .3rem */
+  }
+}
